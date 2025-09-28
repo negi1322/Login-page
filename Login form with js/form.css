@@ -1,0 +1,86 @@
+/* Font family */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1{
+    font-family: "Oswald", sans-serif !important;
+    font-weight: 600;
+    color: black;
+    font-size: 50px;
+}
+.main {
+  background: #e0eafc;
+  background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc);
+  background: linear-gradient(to right, #003074, #e0eafc);
+min-height: 100vh;
+}
+
+.form-container {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 30px;
+  width: 60%;
+  border-radius: 13px;
+}
+
+input {
+  border-radius: 6px;
+  padding: 4px 8px;
+  width: 100%;
+  margin-left: 6px;
+  border: transparent;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.eye-button{
+  position: absolute;
+  font-weight: bolder;
+  font-size: 16px;
+top: 25%;
+right: 0;
+border: 0;
+background: transparent;
+}
+
+.eye-button-close{
+    position: absolute;
+  font-weight: bolder;
+  font-size: 16px;
+top: 25%;
+right: 0;
+display: none;
+}
+.error{
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+.submit {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border: 1px solid grey;
+  transition: opacity 0.5s ease, transform 0.5s ease;}
+
+.submit:hover{
+  transform: scale(1.2);
+  background-color:#497abe;
+  color: white;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .form-container {
+    width: 90%;
+  }
+}
